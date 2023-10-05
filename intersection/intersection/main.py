@@ -34,7 +34,12 @@ def human_readable_boolean(answer: bool) -> str:
     # the provided answer is False
     return "No"
 
-
+# TODO: before starting this, research the types annotations you see below
+# in the function signature.
+# https://docs.python.org/3/library/typing.html#typing.Union
+# https://docs.python.org/3.9/library/typing.html#special-forms
+# TODO: read the proactiveprogrammers site to find information about the
+# purpose of this function.
 def generate_random_container(
     size: int, maximum: int, make_tuple: bool = False
 ) -> Union[List[int], Tuple[int, ...]]:
