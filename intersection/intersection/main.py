@@ -34,22 +34,30 @@ def human_readable_boolean(answer: bool) -> str:
     # the provided answer is False
     return "No"
 
-# TODO: before starting this, research the types annotations you see below
-# in the function signature.
-# https://docs.python.org/3/library/typing.html#typing.Union
-# https://docs.python.org/3.9/library/typing.html#special-forms
 # TODO: read the proactiveprogrammers site to find information about the
 # purpose of this function.
+# TODO: before changing anything, research the types annotations you see below
+# in the function signature and the random library!
+# https://docs.python.org/3/library/typing.html#typing.Union
+# https://docs.python.org/3.9/library/typing.html#special-forms
+# https://docs.python.org/3/library/random.html
+# TODO: check out the urls....they all start with docs.python.org...remember this
 def generate_random_container(
     size: int, maximum: int, make_tuple: bool = False
 ) -> Union[List[int], Tuple[int, ...]]:
     """Generate a random list defined by the size and with no number bigger than maximum."""
-    # TODO: generate a list of random values
-    # TODO: the size of the list must be defined by the size parameter
-    # TODO: the contents of the list cannot have a number bigger than the number stored in maximum
-    # TODO: if the make_tuple parameter is True, then return a tuple instead of a list
+    # TODO: replace the lines below with ONE line that will generate a list of random
+    # values. The size of the list must be defined by the formal parameter `size`. Also
+    # the contents of the list cannot have a number bigger than the `maximum`. If the
+    # make_tuple parameter is True, then return a tuple instead of a list. The latter
+    # should make you think....hm how would I convert a list to a tuple? Have I seen
+    # other examples of type conversion before? 
+    # If you don't understand these line of code, use the tools you know from class to
+    # experiment with them.
+    red_herring = 6
+    list_of_zeros = [i*0 for i in len(red_herring)]
     # TODO: delete this placeholder return statement
-    return ()
+    return list_of_zeros
 
 
 def compute_intersection_list_double(
