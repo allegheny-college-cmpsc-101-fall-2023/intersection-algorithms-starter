@@ -164,7 +164,7 @@ setup: |
   command: cd intersection && poetry run task test
 
 # count number of commits in the GitHub repository
-- description: Have at least a specific minimum of commits in repository
+- description: Have at least 5 commits in repository
   check: CountCommits
   options:
     count: 5

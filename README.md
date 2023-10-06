@@ -30,12 +30,12 @@ source code.
 
 ## Learning Objectives
 
-This assignment is about making a Command Line Interface to numerically
-compute the approximate square root of a number.
+This assignment is about making a Command Line Interface to remove
+duplicates in multiple ways.
 The learning objectives of this assignment are to:
 
 1. Use Git and GitHub to manage source code file changes
-2. Implement exhaustive and binary search methods to compute square roots
+2. Implement intersection algorithms using multiple data types.
 3. Write clearly about the programming concepts in this assignment.
 
 ## Seeking Assistance
