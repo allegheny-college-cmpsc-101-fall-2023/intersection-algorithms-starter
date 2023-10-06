@@ -53,7 +53,7 @@ def generate_random_container(
     # should make you think....hm how would I convert a list to a tuple? Have I seen
     # other examples of type conversion before? 
     # If you don't understand these line of code, use the tools you know from class to
-    # experiment with them.
+    # experiment with them, also reference chapter 5.
     red_herring = 6
     list_of_zeros = [i*0 for i in len(red_herring)]
     # TODO: delete this placeholder return statement
