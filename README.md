@@ -18,7 +18,7 @@ the expectations in the syllabus on
 [Assignment Submission](https://github.com/allegheny-college-cmpsc-101-fall-2023/course-materials#assignment-submission).
 - To begin, read this `README` and the Proactive Programmers' project
 description for
-[Square Roots](https://proactiveprogrammers.com/data-abstraction/programming-projects/square-root/)
+[Intersection Algorithms](https://proactiveprogrammers.com/data-abstraction/engineering-efforts/intersection-algorithms/)
 - Modifications to the gatorgrade.yml file are not permitted without explicit instruction.
 - This assignment is an Engineering Effort and will be evaluated as
 described in the
