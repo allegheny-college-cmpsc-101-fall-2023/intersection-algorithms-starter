@@ -34,9 +34,9 @@ Run 1: ListDouble with a small input
 Run 2: ListDouble with a large input
 please use the same "small" and "large" inputs as above
 
-### Justification of your choice for the `number` and `maximum` variables.
+### Justification of your choice for the `numelems` and `maximum` variables.
 
-TODO: Document and justify your choice for the `number` and `maximum` variables.
+TODO: Document and justify your choice for the `numelems` and `maximum` variables.
 
 ## Performance Analysis.
 
