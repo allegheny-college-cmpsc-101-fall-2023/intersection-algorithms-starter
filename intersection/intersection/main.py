@@ -42,20 +42,25 @@ def human_readable_boolean(answer: bool) -> str:
 # https://docs.python.org/3.9/library/typing.html#special-forms
 # https://docs.python.org/3/library/random.html
 # TODO: check out the urls....they all start with docs.python.org...remember this
-def generate_random_container(
+def fill_random_container(
     size: int, maximum: int, make_tuple: bool = False
 ) -> Union[List[int], Tuple[int, ...]]:
     """Generate a random list defined by the size and with no number bigger than maximum."""
-    # TODO: replace the lines below with ONE line that will generate a list of random
-    # values. The size of the list must be defined by the formal parameter `size`. Also
-    # the contents of the list cannot have a number bigger than the `maximum`. If the
-    # make_tuple parameter is True, then return a tuple instead of a list. The latter
-    # should make you think....hm how would I convert a list to a tuple? Have I seen
-    # other examples of type conversion before? 
-    # If you don't understand these line of code, use the tools you know from class to
-    # experiment with them, also reference chapter 5.
-    red_herring = 6
-    list_of_zeros = [i*0 for i in len(red_herring)]
+    # TODO: update and replace the for loop with ONE line that will make a list
+    # of random values. 
+    #
+    # TODO: Reference: Chapter 5 List Comprehension
+    #
+    # The size of the list must be defined by the formal parameter
+    # `size`. Also the contents of the list cannot have a number bigger than the
+    # `maximum`. 
+    # If the make_tuple parameter is True, then return a tuple instead of a
+    # list. Use your knowledge of type casting to do the conversion.
+
+    list_of_zeros = []
+    replace_this_variable_this_call_and_the_entire_loop = 0
+    for i in range(1):
+        list_of_zeros.append(replace_this_variable_this_call_and_the_entire_loop)
     # TODO: delete this placeholder return statement
     return list_of_zeros
 
@@ -109,7 +114,7 @@ def compute_intersection_tuple_single(
 
 @cli.command()
 def intersection(
-    number: int = typer.Option(5),
+    numelems: int = typer.Option(5),
     maximum: int = typer.Option(25),
     profile: bool = typer.Option(False),
     display: bool = typer.Option(False),
@@ -127,8 +132,8 @@ def intersection(
     # TupleSingle: the intersection algorithm that works on an input list
     if approach.value == IntersectionApproach.TUPLE_SINGLE:
         # generate the two inputs consisting of random values
-        input_one = generate_random_container(number, maximum, make_tuple=True)
-        input_two = generate_random_container(number, maximum, make_tuple=True)
+        input_one = fill_random_container(numelems, maximum, make_tuple=True)
+        input_two = fill_random_container(numelems, maximum, make_tuple=True)
         # perform profiling on the execution of the intersection algorithm
         if profile:
             profiler.start()
@@ -144,8 +149,8 @@ def intersection(
     # TupleDouble: use the intersection algorithm that works on an input tuple
     elif approach.value == IntersectionApproach.TUPLE_DOUBLE:
         # generate the two tuples of random values
-        input_one = generate_random_container(number, maximum, make_tuple=True)
-        input_two = generate_random_container(number, maximum, make_tuple=True)
+        input_one = fill_random_container(numelems, maximum, make_tuple=True)
+        input_two = fill_random_container(numelems, maximum, make_tuple=True)
         # perform profiling on the execution of the intersection algorithm
         if profile:
             profiler.start()
@@ -161,8 +166,8 @@ def intersection(
     # ListSingle: the intersection algorithm that works on an input list
     elif approach.value == IntersectionApproach.LIST_SINGLE:
         # generate the two inputs consisting of random values
-        input_one = generate_random_container(number, maximum, make_tuple=False)
-        input_two = generate_random_container(number, maximum, make_tuple=False)
+        input_one = fill_random_container(numelems, maximum, make_tuple=False)
+        input_two = fill_random_container(numelems, maximum, make_tuple=False)
         # perform profiling on the execution of the intersection algorithm
         if profile:
             profiler.start()
@@ -178,8 +183,8 @@ def intersection(
     # ListDouble: use the intersection algorithm that works on an input list
     elif approach.value == IntersectionApproach.LIST_DOUBLE:
         # generate the two inputs consisting of random values
-        input_one = generate_random_container(number, maximum, make_tuple=False)
-        input_two = generate_random_container(number, maximum, make_tuple=False)
+        input_one = fill_random_container(numelems, maximum, make_tuple=False)
+        input_two = fill_random_container(numelems, maximum, make_tuple=False)
         # perform profiling on the execution of the intersection algorithm
         if profile:
             profiler.start()
@@ -199,15 +204,15 @@ def intersection(
         )
         console.print()
         console.print("Performed intersection with:")
-        console.print(f"---> the first data container: {input_one}")
-        console.print(f"---> the second data container: {input_two}")
+        console.print(f"---> the first data container containing: {input_one}")
+        console.print(f"---> the second data container containing: {input_two}")
         console.print(
-            f"Computed the intersection as the data container: {intersection_output}"
+            f"Computed the intersection as a data container containing: {intersection_output}"
         )
     # display the results of the profiling if that option was requested
     if profile:
         console.print()
         console.print(
-            f":microscope: Here's profiling data from computing an intersection with random data containers of {number}!"
+            f":microscope: Here's profiling data from computing an intersection with random data containers containing {numelems}!"
         )
         profiler.print()

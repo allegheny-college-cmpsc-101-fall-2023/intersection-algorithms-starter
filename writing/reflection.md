@@ -1,10 +1,5 @@
 # Intersection Algorithms
 
-TODO: Make sure that you delete all of the TODO markers inside of this file
-while also delete and/or repurposing all of the prompts in the document. The
-final version of this file should contain professionally written text that
-does not have any mistakes in spelling, grammar, technical meaning, or format.
-
 ## Add Your Name Here
 
 ## Program Output With Profiling, use eight fenced code blocks.
@@ -49,7 +44,7 @@ TODO: Provide three paragraphs that explain which algorithm is fastest, by how
 much it is faster*** compute it!
 and how you knew that the it was faster, referencing the data
 in the aforementioned command outputs to support your response. You should make
-sure that you answer the following research questions:
+sure that you answer the following research questions (RQs):
 
 - RQ: Is intersection faster with a list or a tuple?
 - RQ: Is intersection faster with a double-for-loop or a single-for-loop?
