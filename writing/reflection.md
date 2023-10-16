@@ -40,11 +40,18 @@ TODO: Document and justify your choice for the `numelems` and `maximum` variable
 
 ## Performance Analysis.
 
+TODO: Fill in the table in markdown to summarize the profile timing data.
+For a valid empirical comparison, you must have at least one row below with
+complete data.
+
+| numelems | maximum | approach ls | approach ld | approach ts | approach td |
+|----------|---------|-------------|-------------|-------------|-------------|
+
 TODO: Provide three paragraphs that explain which algorithm is fastest, by how
 much it is faster*** compute it!
 and how you knew that the it was faster, referencing the data
-in the aforementioned command outputs to support your response. You should make
-sure that you answer the following research questions (RQs):
+in the aforementioned command outputs / data table to support your response.
+You should make sure that you answer the following research questions (RQs):
 
 - RQ: Is intersection faster with a list or a tuple?
 - RQ: Is intersection faster with a double-for-loop or a single-for-loop?
