@@ -61,7 +61,7 @@ def fill_random_container(
     replace_this_variable_this_call_and_the_entire_loop = 0
     for i in range(1):
         list_of_zeros.append(replace_this_variable_this_call_and_the_entire_loop)
-    # TODO: delete this placeholder return statement
+    # TODO: replace this placeholder return statement
     return list_of_zeros
 
 
