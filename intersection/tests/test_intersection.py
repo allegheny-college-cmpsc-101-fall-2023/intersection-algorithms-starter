@@ -10,10 +10,11 @@ def test_version():
     assert __version__ == "0.1.0"
 
 
-def test_generate_random_container_list():
+def test_fill_random_container_list():
     """Ensure that generation of random container is correct size."""
-    random_container = main.generate_random_container(10, 100, False)
+    random_container = main.fill_random_container(10, 100, False)
     assert len(random_container) == 10
+    assert type(random_container) == list
 
 
 def test_intersection_list_single_double():
